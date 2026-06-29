@@ -78,7 +78,7 @@ uv run pytest                               # tools + loop green; integration sk
 - [ ] The loop terminates when the model stops calling tools
 - [ ] `MAX_STEPS` prevents an infinite loop
 
-**Solution:** `git diff checkpoint-03 -- src/meteo_agent/loop.py`. Keep this
+**Solution:** `git diff origin/checkpoint-03 -- src/meteo_agent/loop.py`. Keep this
 picture in mind for the next checkpoint — everything LangGraph does, you just did
 by hand.
 

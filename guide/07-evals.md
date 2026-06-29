@@ -61,7 +61,7 @@ uv run meteo-eval --limit 2       # quick subset while iterating
 - [ ] You can add a new `EvalCase` and see it scored
 - [ ] You can articulate why reference-SQL ground truth doesn't go stale
 
-**Solution:** `git diff checkpoint-07 -- src/meteo_agent/evals/`.
+**Solution:** `git diff origin/checkpoint-07 -- src/meteo_agent/evals/`.
 
 ## Where to go next (production)
 

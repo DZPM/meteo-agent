@@ -65,7 +65,7 @@ uv run pytest -m integration
 - [ ] `tools.py` is byte-for-byte unchanged from checkpoint 02
 - [ ] You can point at where the "loop" lives in the graph
 
-**Solution:** `git diff checkpoint-04 -- src/meteo_agent/graph.py` (see
+**Solution:** `git diff origin/checkpoint-04 -- src/meteo_agent/graph.py` (see
 [BRANCHES.md](../BRANCHES.md)).
 
 Next: [05 — MCP](05-mcp.md).

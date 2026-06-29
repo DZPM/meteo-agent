@@ -65,14 +65,14 @@ not hand-written. You'll feed `OPENAI_TOOLS` to the model in checkpoint 03.
 ## Checkpoint
 
 ```bash
-uv run pytest tests/test_tools.py   # green — all 9 pass
+uv run pytest tests/test_tools.py   # green — all 14 pass
 ```
 
 - [ ] Writes are blocked both by validation and by the read-only connection
 - [ ] A bad column name comes back as `"error: ..."`, not an exception
 - [ ] `get_schema()` mentions the table and the yearly view
 
-**Solution:** `git diff checkpoint-02 -- src/meteo_agent/tools.py` (or, in
+**Solution:** `git diff origin/checkpoint-02 -- src/meteo_agent/tools.py` (or, in
 directory mode, `../src/meteo_agent/tools.py`). Note how small it is — the
 discipline is in the contract, not the line count.
 

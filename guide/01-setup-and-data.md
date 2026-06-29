@@ -32,7 +32,7 @@ The agent answers questions about the **Beguda weather station** — 676,595
 sub-daily readings from 2002 to today, in one SQLite file with three
 pre-aggregated views (`meteobeguda_daily`, `_monthly`, `_yearly`).
 
-IN order to get the data, you need to run a download script: `uv run python data/build_db.py` downloads the four period
+In order to get the data, you need to run a download script: `uv run python data/build_db.py` downloads the four period
   databases from the public `meteobeguda-etl` repo, consolidates them into one,
   and recreates the views. (Override the source with `--base-url`.)
 
@@ -43,7 +43,7 @@ Sanity check (once you have the file):
 
 ```bash
 uv run python -c "import sqlite3,os; \
-print(sqlite3.connect(os.environ.get('METEO_DB_PATH','../data/meteobeguda.sqlite')).execute('select count(*) from meteobeguda_events').fetchone())"
+print(sqlite3.connect(os.environ.get('METEO_DB_PATH','data/meteobeguda.sqlite')).execute('select count(*) from meteobeguda_events').fetchone())"
 ```
 
 ## 3. The model seam

@@ -63,6 +63,6 @@ uv run meteo-mcp-agent "What was the wettest month on record?"
 - [ ] `tools.py` and `graph.py`'s `build_agent` are unchanged
 - [ ] You can explain why we didn't use the official SQLite MCP server
 
-**Solution:** `git diff checkpoint-05 -- src/meteo_agent/mcp_server.py src/meteo_agent/mcp_agent.py`.
+**Solution:** `git diff origin/checkpoint-05 -- src/meteo_agent/mcp_server.py src/meteo_agent/mcp_agent.py`.
 
 Next: [06 — Observability](06-observability.md).

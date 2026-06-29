@@ -64,6 +64,6 @@ Open Langfuse → you should see a trace: the system prompt, the model turns, ea
 - [ ] `meteo-trace "..."` produces a visible trace with the SQL in it
 - [ ] `graph.py` is unchanged
 
-**Solution:** `git diff checkpoint-06 -- src/meteo_agent/observability.py`.
+**Solution:** `git diff origin/checkpoint-06 -- src/meteo_agent/observability.py`.
 
 Next: [07 — Evals](07-evals.md).
